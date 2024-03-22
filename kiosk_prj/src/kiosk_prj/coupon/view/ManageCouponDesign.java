@@ -1,7 +1,9 @@
-package kiosk_prj.coupon;
+package kiosk_prj.coupon.view;
 
 import javax.swing.JButton;
 import javax.swing.JDialog;
+
+import kiosk_prj.coupon.controller.ManageCouponEvent;
 
 @SuppressWarnings("serial")
 //public class ManageCouponDesign extends JPanel {

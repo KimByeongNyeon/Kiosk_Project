@@ -1,4 +1,4 @@
-package kiosk_prj.coupon;
+package kiosk_prj.coupon.view;
 
 import static java.lang.String.valueOf;
 
@@ -12,6 +12,9 @@ import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.JTextField;
 import javax.swing.border.TitledBorder;
+
+import kiosk_prj.coupon.UnsignedIntegerDocument;
+import kiosk_prj.coupon.controller.AddCouponEvent;
 
 @SuppressWarnings("serial")
 public class AddCouponDesign extends JDialog{
@@ -77,6 +80,7 @@ public class AddCouponDesign extends JDialog{
 		jbtnGoMain.addActionListener(ace);
 		jbtnAddCoupon.addActionListener(ace);
 		jbtnCancel.addActionListener(ace);
+		addWindowListener(ace);
 		
 		setLayout(null);
 		
@@ -120,7 +124,6 @@ public class AddCouponDesign extends JDialog{
 		add(jbtnAddCoupon);
 		add(jbtnCancel);
 		
-		setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 		// 455, 130, 1024, 768
 		setBounds(mcd.getX() + 200, mcd.getY() + 100, 750, 650);
 		setVisible(true);

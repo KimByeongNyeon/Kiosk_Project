@@ -1,4 +1,4 @@
-package kiosk_prj.coupon;
+package kiosk_prj.coupon.view;
 
 import javax.swing.ButtonGroup;
 import javax.swing.DefaultComboBoxModel;
@@ -10,6 +10,8 @@ import javax.swing.JPanel;
 import javax.swing.JRadioButton;
 import javax.swing.JTextField;
 import javax.swing.border.TitledBorder;
+
+import kiosk_prj.coupon.controller.ModifyCouponEvent;
 
 @SuppressWarnings("serial")
 public class ModifyCouponDesign extends JDialog {

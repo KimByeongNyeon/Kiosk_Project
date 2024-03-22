@@ -1,4 +1,4 @@
-package kiosk_prj.coupon;
+package kiosk_prj.coupon.view;
 
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
@@ -11,6 +11,9 @@ import javax.swing.JTable;
 import javax.swing.JTextField;
 import javax.swing.border.TitledBorder;
 import javax.swing.table.DefaultTableModel;
+
+import kiosk_prj.coupon.UnsignedIntegerDocument;
+import kiosk_prj.coupon.controller.PublishCouponEvent;
 
 @SuppressWarnings("serial")
 public class PublishCouponDesign extends JDialog {
@@ -50,6 +53,7 @@ public class PublishCouponDesign extends JDialog {
 		jbtnGoMain.addActionListener(pce);
 		jbtnPublish.addActionListener(pce);
 		jbtnCancel.addActionListener(pce);
+		addWindowListener(pce);
 		
 		JPanel jpPubCondition = new JPanel();
 		jpPubCondition.setLayout(null);
@@ -76,7 +80,6 @@ public class PublishCouponDesign extends JDialog {
 		add(jbtnPublish);
 		add(jbtnCancel);
 		
-		setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
 		// 455, 130, 1024, 768
 		setBounds(mcd.getX() + 200, mcd.getY() + 100, 750, 650);
 		setVisible(true);

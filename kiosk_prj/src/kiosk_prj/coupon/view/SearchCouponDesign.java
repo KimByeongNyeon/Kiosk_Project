@@ -1,4 +1,4 @@
-package kiosk_prj.coupon;
+package kiosk_prj.coupon.view;
 
 import javax.swing.JDialog;
 import javax.swing.JLabel;
@@ -7,6 +7,8 @@ import javax.swing.JScrollPane;
 import javax.swing.JTabbedPane;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
+
+import kiosk_prj.coupon.controller.SearchCouponEvent;
 
 @SuppressWarnings("serial")
 public class SearchCouponDesign extends JPanel {
